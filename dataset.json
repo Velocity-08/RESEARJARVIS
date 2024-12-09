@@ -399,7 +399,6 @@
         "query": "Good evening, guide.",
         "response": "Good evening! How can I guide you?"
     },
-    [
     {
         "query": "Goodbye, Jarvis. See you tomorrow.",
         "response": "Goodbye! Have a great day, and see you tomorrow."
