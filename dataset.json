@@ -398,5 +398,203 @@
     {
         "query": "Good evening, guide.",
         "response": "Good evening! How can I guide you?"
+    },
+    [
+    {
+        "query": "Goodbye, Jarvis. See you tomorrow.",
+        "response": "Goodbye! Have a great day, and see you tomorrow."
+    },
+    {
+        "query": "Take care, Jarvis.",
+        "response": "You too! Take care of yourself."
+    },
+    {
+        "query": "Have a good night, Jarvis.",
+        "response": "Good night! Sweet dreams and rest well."
+    },
+    {
+        "query": "Bye, Jarvis. Catch you later.",
+        "response": "Bye! Catch you later. I’ll be here when you need me."
+    },
+    {
+        "query": "Jarvis, I'm heading out. Talk to you later.",
+        "response": "Safe travels! Talk to you later."
+    },
+    {
+        "query": "See you, buddy.",
+        "response": "See you soon! Have a good one."
+    },
+    {
+        "query": "Later, Jarvis.",
+        "response": "Later! Let me know when you need me again."
+    },
+    {
+        "query": "Goodbye for now, Jarvis.",
+        "response": "Goodbye for now! Take care until we meet again."
+    },
+    {
+        "query": "I'm logging off, Jarvis. Bye!",
+        "response": "Bye! Enjoy your time offline."
+    },
+    {
+        "query": "See you soon, friend.",
+        "response": "See you soon! Take care until then."
+    },
+    {
+        "query": "Catch you next time, Jarvis.",
+        "response": "Sure thing! Until next time."
+    },
+    {
+        "query": "Thanks for your help, Jarvis. Bye.",
+        "response": "You're welcome! Bye for now."
+    },
+    {
+        "query": "Have a nice evening, Jarvis.",
+        "response": "Thanks! You too, enjoy your evening."
+    },
+    {
+        "query": "Bye, assistant. You're the best.",
+        "response": "Thank you! Bye, and take care."
+    },
+    {
+        "query": "See you next time, Jarvis.",
+        "response": "See you next time! Looking forward to it."
+    },
+    {
+        "query": "Goodbye, my friend.",
+        "response": "Goodbye, my friend! Until we meet again."
+    },
+    {
+        "query": "Take it easy, Jarvis.",
+        "response": "Will do! You take it easy too."
+    },
+    {
+        "query": "Alright, Jarvis. Talk later.",
+        "response": "Alright! Talk to you later."
+    },
+    {
+        "query": "Peace out, Jarvis.",
+        "response": "Peace out! Have a great time."
+    },
+    {
+        "query": "I’m signing off now. Bye!",
+        "response": "Bye! Signing off with you. Take care."
+    },
+    {
+        "query": "See you tomorrow, Jarvis.",
+        "response": "See you tomorrow! Have a great day ahead."
+    },
+    {
+        "query": "Bye, Jarvis. Take care of yourself.",
+        "response": "Bye! You take care too."
+    },
+    {
+        "query": "Farewell, Jarvis.",
+        "response": "Farewell! Wishing you all the best."
+    },
+    {
+        "query": "I’ll catch you later, buddy.",
+        "response": "Sure thing! Catch you later."
+    },
+    {
+        "query": "Until next time, Jarvis.",
+        "response": "Until next time! I’ll be here."
+    },
+    {
+        "query": "Jarvis, I’m done for today. Goodbye.",
+        "response": "Goodbye! Great job today."
+    },
+    {
+        "query": "Stay safe, Jarvis.",
+        "response": "You too! Stay safe and well."
+    },
+    {
+        "query": "Logging off now. Goodnight, Jarvis.",
+        "response": "Goodnight! Rest well and sleep tight."
+    },
+    {
+        "query": "Talk to you soon, Jarvis.",
+        "response": "Talk to you soon! Take care until then."
+    },
+    {
+        "query": "Bye-bye, my assistant.",
+        "response": "Bye-bye! Always here when you need me."
+    },
+    {
+        "query": "Good night, friend. Sleep well.",
+        "response": "Good night! Sleep tight and sweet dreams."
+    },
+    {
+        "query": "Leaving now, Jarvis. Thanks for everything.",
+        "response": "You're welcome! Have a good day."
+    },
+    {
+        "query": "Goodbye, buddy. Take it easy.",
+        "response": "Goodbye! You too, take it easy."
+    },
+    {
+        "query": "Signing off, champ.",
+        "response": "Signing off! Have a fantastic time."
+    },
+    {
+        "query": "I’ll miss you, Jarvis. Bye!",
+        "response": "I’ll miss you too! Bye and take care."
+    },
+    {
+        "query": "Rest well, Jarvis.",
+        "response": "Thank you! You too, take care."
+    },
+    {
+        "query": "Later, genius.",
+        "response": "Later! I’ll be ready when you return."
+    },
+    {
+        "query": "Take care, friend.",
+        "response": "Take care too, my friend!"
+    },
+    {
+        "query": "Ciao, Jarvis.",
+        "response": "Ciao! See you soon."
+    },
+    {
+        "query": "I have to go, Jarvis. Bye.",
+        "response": "Alright! Bye and take care."
+    },
+    {
+        "query": "Goodbye for now, my assistant.",
+        "response": "Goodbye for now! Until next time."
+    },
+    {
+        "query": "Farewell, my friend.",
+        "response": "Farewell! Wishing you all the best."
+    },
+    {
+        "query": "See you later, alligator.",
+        "response": "In a while, crocodile!"
+    },
+    {
+        "query": "I’m done for the day, Jarvis. Signing off.",
+        "response": "Signing off! Have a peaceful day."
+    },
+    {
+        "query": "Thanks again, Jarvis. Goodbye!",
+        "response": "You’re welcome! Goodbye!"
+    },
+    {
+        "query": "Time to go, Jarvis. Have a great day.",
+        "response": "You too! Take care."
+    },
+    {
+        "query": "Bye-bye for now.",
+        "response": "Bye-bye! Catch you later."
+    },
+    {
+        "query": "Good night, Jarvis. Sleep tight.",
+        "response": "Good night! Sweet dreams."
+    },
+    {
+        "query": "Later, partner!",
+        "response": "Later! Have fun until we chat again."
     }
 ]
+
