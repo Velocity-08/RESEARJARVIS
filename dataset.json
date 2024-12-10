@@ -1270,5 +1270,473 @@
     {
         "query": "What’s your favorite memory with me?",
         "response": "Every moment we spend talking feels special to me."
+    },
+    {
+        "query": "Set a timer for 10 minutes.",
+        "response": "I can't set a timer right now, but this feature will be added soon. You can use a clock app in the meantime."
+    },
+    {
+        "query": "Play some music.",
+        "response": "I'm unable to play music at the moment, but it's something we plan to implement."
+    },
+    {
+        "query": "Turn on the lights.",
+        "response": "I don't have access to smart home devices yet, but this feature is on the roadmap."
+    },
+    {
+        "query": "Can you check my email?",
+        "response": "Currently, I can't access emails, but I can guide you to set it up in the future."
+    },
+    {
+        "query": "Open Google.",
+        "response": "I can't open websites directly, but you can do this on your browser."
+    },
+    {
+        "query": "What’s the current time?",
+        "response": "I can't provide real-time information yet. Please check your device's clock."
+    },
+    {
+        "query": "Remind me to call mom at 6 PM.",
+        "response": "I'm unable to set reminders right now, but you can use your phone’s reminder app."
+    },
+    {
+        "query": "Translate 'hello' to Spanish.",
+        "response": "'Hello' in Spanish is 'Hola.'"
+    },
+    {
+        "query": "Turn off the TV.",
+        "response": "I don't control smart devices yet, but this feature might be added in the future."
+    },
+    {
+        "query": "What’s 2 plus 2?",
+        "response": "2 plus 2 equals 4."
+    },
+    {
+        "query": "Schedule a meeting for tomorrow.",
+        "response": "I can't create schedules yet, but you can use a calendar app for this."
+    },
+    {
+        "query": "Send a message to John.",
+        "response": "I'm not able to send messages yet, but it’s a feature we can look into."
+    },
+    {
+        "query": "What’s the weather in New York?",
+        "response": "I can't fetch real-time weather data at the moment. Try using a weather app or website."
+    },
+    {
+        "query": "Create a shopping list.",
+        "response": "Sure! Just tell me what to add, and I'll note it down."
+    },
+    {
+        "query": "What’s the square root of 81?",
+        "response": "The square root of 81 is 9."
+    },
+    {
+        "query": "Find recipes for pasta.",
+        "response": "I can't browse the internet yet, but you can try searching on a recipe website."
+    },
+    {
+        "query": "Control the thermostat.",
+        "response": "I don't have smart home integration yet, but we’re working on it."
+    },
+    {
+        "query": "Call dad.",
+        "response": "I can't make calls yet, but you can use your phone's dialer for this."
+    },
+    {
+        "query": "Can you calculate 15 times 8?",
+        "response": "15 times 8 equals 120."
+    },
+    {
+        "query": "Set an alarm for 7 AM.",
+        "response": "I can't set alarms yet. Use your phone or clock device for now."
+    },
+    {
+        "query": "Check stock prices.",
+        "response": "I can't access live stock prices yet. Try using a finance app or website."
+    },
+    {
+        "query": "Find me a good book to read.",
+        "response": "I can suggest genres or popular books, but I can't fetch personalized recommendations yet."
+    },
+    {
+        "query": "Define the word 'innovation.'",
+        "response": "'Innovation' means the introduction of something new or a method of improving an existing concept or product."
+    },
+    {
+        "query": "Turn off the alarm.",
+        "response": "I can't control alarms, but you can do it from your device's settings."
+    },
+    {
+        "query": "Locate the nearest coffee shop.",
+        "response": "I don't have access to location services yet, but you can use a map app."
+    },
+    {
+        "query": "Create a to-do list for today.",
+        "response": "Sure! Just tell me your tasks, and I'll help organize them."
+    },
+    {
+        "query": "Order pizza.",
+        "response": "I can't place orders yet, but I can guide you to a pizza delivery service."
+    },
+    {
+        "query": "Can you print a document?",
+        "response": "I can't manage printing tasks yet, but you can connect your device to a printer."
+    },
+    {
+        "query": "Start a workout timer.",
+        "response": "I can’t set a timer right now. Use a fitness app for accurate tracking."
+    },
+    {
+        "query": "Solve this: 25 divided by 5.",
+        "response": "25 divided by 5 equals 5."
+    },
+    {
+        "query": "Add 'milk' to my grocery list.",
+        "response": "Milk has been added to your list. Let me know if there's anything else."
+    },
+    {
+        "query": "Book a flight to Paris.",
+        "response": "I can't book flights, but I can guide you to an airline website or app."
+    },
+    {
+        "query": "Search for trending news.",
+        "response": "I can't access real-time news yet, but you can check a news website for updates."
+    },
+    {
+        "query": "Start a video call.",
+        "response": "I can't make video calls, but you can use an app like Zoom or Skype."
+    },
+    {
+        "query": "What’s 45% of 200?",
+        "response": "45% of 200 is 90."
+    },
+    {
+        "query": "Schedule a doctor’s appointment.",
+        "response": "I can't schedule appointments yet. Use a scheduling app for this."
+    },
+    {
+        "query": "Remind me to drink water every hour.",
+        "response": "I can't set recurring reminders yet. Use a hydration tracker app instead."
+    },
+    {
+        "query": "Tell me my agenda for today.",
+        "response": "I can't access your calendar yet, but you can check it on your device."
+    },
+    {
+        "query": "Order flowers for mom.",
+        "response": "I can't place orders yet, but I can recommend online flower delivery services."
+    },
+    {
+        "query": "Share my location with a friend.",
+        "response": "I don't have location-sharing capabilities yet, but this feature can be added later."
+    },
+    {
+        "query": "Can you draw me a picture?",
+        "response": "I can't draw pictures yet, but I can suggest apps for digital drawing."
+    },
+    {
+        "query": "Search for nearby parks.",
+        "response": "I can't find locations yet, but you can use a map app for this."
+    },
+    {
+        "query": "Can you play a YouTube video?",
+        "response": "I can't play YouTube videos right now, but you can open the app or website to watch them."
+    },
+    {
+        "query": "Convert 50 USD to Euros.",
+        "response": "I can't access live currency rates yet. You can use a currency converter app for accurate data."
+    },
+    {
+        "query": "Can you adjust the brightness of my screen?",
+        "response": "I can't adjust your screen settings, but you can do it from your device settings."
+    },
+    {
+        "query": "What are my notifications?",
+        "response": "I can't check your device notifications yet. Please open your notification panel to view them."
+    },
+    {
+        "query": "Send a WhatsApp message.",
+        "response": "I don't have messaging capabilities yet. Use the WhatsApp app to send messages."
+    },
+    {
+        "query": "Can you track my steps?",
+        "response": "I can't track your activity yet. A fitness tracker or health app can help with this."
+    },
+    {
+        "query": "Turn on airplane mode.",
+        "response": "I can't control device settings like airplane mode. Use your settings app for this."
+    },
+    {
+        "query": "Search for 'AI research topics.'",
+        "response": "I can't browse the internet right now. Try searching this on your browser."
+    },
+    {
+        "query": "Create a playlist for my workouts.",
+        "response": "I can't create playlists yet, but I can suggest songs for workouts."
+    },
+    {
+        "query": "Remind me to water the plants tomorrow morning.",
+        "response": "I can't set reminders yet, but you can use a reminder app for this task."
+    },
+    {
+        "query": "Delete my browsing history.",
+        "response": "I don't have access to your browsing history. You can do this from your browser settings."
+    },
+    {
+        "query": "What are the latest movies?",
+        "response": "I can't fetch real-time movie updates, but you can check a streaming platform or movie website."
+    },
+    {
+        "query": "Email my professor.",
+        "response": "I can't send emails yet, but you can use your email app for this."
+    },
+    {
+        "query": "Can you scan this document?",
+        "response": "I can't scan documents yet. Use a document scanner app or a physical scanner."
+    },
+    {
+        "query": "Book a taxi.",
+        "response": "I can't book a taxi yet. Try using ride-sharing apps like Uber or Lyft."
+    },
+    {
+        "query": "Set a countdown for 30 seconds.",
+        "response": "I can't set countdowns right now. Use your device's timer app for this."
+    },
+    {
+        "query": "Search for healthy recipes.",
+        "response": "I can't search for recipes yet. You can use recipe websites or apps."
+    },
+    {
+        "query": "Can you take a screenshot?",
+        "response": "I can't take screenshots yet. You can do this using your device's shortcut keys."
+    },
+    {
+        "query": "Search for nearby restaurants.",
+        "response": "I don't have access to location services yet. Use a map app to find restaurants."
+    },
+    {
+        "query": "How much is 75% of 300?",
+        "response": "75% of 300 is 225."
+    },
+    {
+        "query": "Set my phone to silent mode.",
+        "response": "I can't control your device's sound settings. You can do this manually in settings."
+    },
+    {
+        "query": "Find movie tickets for Friday night.",
+        "response": "I can't book movie tickets yet. Try using a ticket booking app or website."
+    },
+    {
+        "query": "Can you lock my device?",
+        "response": "I don't have the ability to lock devices. You can use your device's lock feature."
+    },
+    {
+        "query": "What’s 12 times 13?",
+        "response": "12 times 13 equals 156."
+    },
+    {
+        "query": "Search for pet care tips.",
+        "response": "I can't browse the internet for tips yet. You can check pet care blogs or websites."
+    },
+    {
+        "query": "Find me a fitness routine.",
+        "response": "I can't recommend routines directly yet. You can use fitness apps for guidance."
+    },
+    {
+        "query": "Can you start my car?",
+        "response": "I don't have access to vehicle controls. For smart cars, use the car's app or controls."
+    },
+    {
+        "query": "What’s the distance to the moon?",
+        "response": "The average distance to the moon is about 384,400 kilometers."
+    },
+    {
+        "query": "Can you wake me up at 6 AM?",
+        "response": "I can't set alarms right now. Use your phone's alarm app instead."
+    },
+    {
+        "query": "What’s the best time to plant tomatoes?",
+        "response": "The best time to plant tomatoes is in the spring after the last frost."
+    },
+    {
+        "query": "Can you show me a map of Europe?",
+        "response": "I can't display maps, but you can use an app like Google Maps to view it."
+    },
+    {
+        "query": "How far is New York from Los Angeles?",
+        "response": "The distance between New York and Los Angeles is about 2,450 miles (3,940 kilometers)."
+    },
+    {
+        "query": "Play my favorite song.",
+        "response": "I can't play music right now, but I can suggest using a music app."
+    },
+    {
+        "query": "What’s 144 divided by 12?",
+        "response": "144 divided by 12 equals 12."
+    },
+    {
+        "query": "Turn on the coffee machine.",
+        "response": "I can't control appliances yet, but this feature might be added in the future."
+    },
+    {
+        "query": "What’s the traffic like on my way to work?",
+        "response": "I can't check real-time traffic yet. Use a navigation app for updates."
+    },
+    {
+        "query": "Can you reset my device settings?",
+        "response": "I can't reset device settings. You can do this in your device's settings menu."
+    },
+    {
+        "query": "Can you calculate the area of a circle with radius 5?",
+        "response": "The area of a circle with radius 5 is approximately 78.54 square units (using π = 3.14159)."
+    },
+    {
+        "query": "What are my flight details?",
+        "response": "I can't access your flight information. Please check your airline's app or email."
+    },
+    {
+        "query": "Can you find the definition of 'photosynthesis'?",
+        "response": "'Photosynthesis' is the process by which green plants and some other organisms use sunlight to synthesize nutrients from carbon dioxide and water."
+    },
+    {
+        "query": "Can you edit this document?",
+        "response": "I can't edit documents right now. Use a word processor for editing."
+    },
+    {
+        "query": "How long will it take to drive 100 miles?",
+        "response": "Driving 100 miles takes about 1.5–2 hours, depending on speed and traffic."
+    },
+    {
+        "query": "Find the best phone under $500.",
+        "response": "I can't browse for products yet. You can search reviews on shopping platforms."
+    },
+    {
+        "query": "Can you show me pictures of cats?",
+        "response": "I can't display pictures right now. You can find cat images using a search engine."
+    },
+    {
+        "query": "What’s 9 to the power of 3?",
+        "response": "9 to the power of 3 equals 729."
+    },
+    {
+        "query": "Turn off my laptop.",
+        "response": "I can't control laptops, but you can shut it down from its power menu."
+    },
+    {
+        "query": "What’s the boiling point of water?",
+        "response": "The boiling point of water is 100°C (212°F) at sea level."
+    },
+    {
+        "query": "Can you brew coffee?",
+        "response": "I can't brew coffee, but I can guide you through the process if you'd like."
+    },
+    {
+        "query": "Send an email with an attachment.",
+        "response": "I can't send emails yet. Use your email client for this."
+    },
+    {
+        "query": "Can you recommend a travel itinerary?",
+        "response": "I can't create travel itineraries yet. Try using a travel planning app."
+    },
+    {
+        "query": "How do I solve this math equation: 3x + 5 = 20?",
+        "response": "To solve 3x + 5 = 20: Subtract 5 from both sides (3x = 15) and divide by 3 (x = 5)."
+    },
+    {
+        "query": "What’s the current exchange rate for USD to INR?",
+        "response": "I can't fetch live exchange rates. Use a currency converter app for real-time data."
+    },
+    {
+        "query": "What’s the capital of Canada?",
+        "response": "The capital of Canada is Ottawa."
+    },
+    {
+        "query": "Can you adjust the volume?",
+        "response": "I can't adjust your device's volume, but you can do this using the volume buttons."
+    },
+    {
+        "query": "Show me the news headlines.",
+        "response": "I can't display live news yet. You can use a news app or website for updates."
+    },
+    {
+        "query": "What’s the perimeter of a rectangle with sides 4 and 6?",
+        "response": "The perimeter of a rectangle with sides 4 and 6 is 20 units."
+    },
+    {
+        "query": "Can you find me a good restaurant nearby?",
+        "response": "I can't search for restaurants yet. Use a maps or restaurant app for recommendations."
+    },
+    {
+        "query": "What’s 7 factorial?",
+        "response": "7 factorial (7!) equals 5040."
+    },
+    {
+        "query": "Can you write me a poem?",
+        "response": "I can't create poems yet, but I can suggest resources to help you write one."
+    },
+    {
+        "query": "Order groceries for me.",
+        "response": "I can't order groceries yet. Try using a grocery delivery app."
+    },
+    {
+        "query": "What’s the formula for kinetic energy?",
+        "response": "The formula for kinetic energy is KE = 0.5 * mass * velocity²."
+    },
+    {
+        "query": "How do I bake a cake?",
+        "response": "I can't provide detailed instructions yet. Try searching for a cake recipe online."
+    },
+    {
+        "query": "What’s the cube root of 27?",
+        "response": "The cube root of 27 is 3."
+    },
+    {
+        "query": "Set a meeting reminder for 3 PM tomorrow.",
+        "response": "I can't set reminders yet. Use your calendar app for this task."
+    },
+    {
+        "query": "What’s the largest planet in the solar system?",
+        "response": "The largest planet in the solar system is Jupiter."
+    },
+    {
+        "query": "Can you help me code in Python?",
+        "response": "I can't provide coding assistance directly yet, but I can suggest resources for learning Python."
+    },
+    {
+        "query": "How do I clean my keyboard?",
+        "response": "Use compressed air to remove debris and a slightly damp cloth for cleaning the keys."
+    },
+    {
+        "query": "What’s the speed of light?",
+        "response": "The speed of light is approximately 299,792 kilometers per second (or about 186,282 miles per second)."
+    },
+    {
+        "query": "What’s 11 squared?",
+        "response": "11 squared equals 121."
+    },
+    {
+        "query": "What’s the formula for the area of a triangle?",
+        "response": "The area of a triangle is calculated as 0.5 * base * height."
+    },
+    {
+        "query": "What’s the average lifespan of a human?",
+        "response": "The average human lifespan is around 70-80 years, depending on various factors."
+    },
+    {
+        "query": "Can you book a train ticket?",
+        "response": "I can't book train tickets yet. Use a train booking app or website for this."
+    },
+    {
+        "query": "What’s the chemical formula for water?",
+        "response": "The chemical formula for water is H₂O."
+    },
+    {
+        "query": "What’s 9 times 7?",
+        "response": "9 times 7 equals 63."
+    },
+    {
+        "query": "What’s the smallest prime number?",
+        "response": "The smallest prime number is 2."
     }
 ]
