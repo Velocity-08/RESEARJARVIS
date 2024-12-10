@@ -2126,5 +2126,165 @@
     {
         "query": "What is the tallest waterfall in the world?",
         "response": "The tallest waterfall in the world is Angel Falls in Venezuela, with a height of 979 meters (3,212 feet)."
+    },
+    {
+        "query": "I'm feeling sad.",
+        "response": "I'm sorry to hear that. Sometimes talking about it can help. What's on your mind?"
+    },
+    {
+        "query": "I'm so happy today!",
+        "response": "That's wonderful to hear! What made your day so great?"
+    },
+    {
+        "query": "I'm feeling angry right now.",
+        "response": "I understand. Anger can be tough to handle. Want to talk about what's making you upset?"
+    },
+    {
+        "query": "I feel lonely.",
+        "response": "I'm here to chat if you need someone to talk to. You're not alone."
+    },
+    {
+        "query": "I'm really stressed out.",
+        "response": "Stress can be overwhelming. Do you want to share what's causing it? Maybe I can help."
+    },
+    {
+        "query": "I feel anxious about tomorrow.",
+        "response": "It's natural to feel anxious about the unknown. Would you like to talk through it?"
+    },
+    {
+        "query": "I'm feeling grateful today.",
+        "response": "That's a great mindset! What are you feeling grateful for?"
+    },
+    {
+        "query": "I'm scared about the future.",
+        "response": "The future can be uncertain, but it's okay to take things one step at a time. What's worrying you the most?"
+    },
+    {
+        "query": "I'm feeling confused.",
+        "response": "I'm here to help you sort things out. What's on your mind?"
+    },
+    {
+        "query": "I feel excited about my new job!",
+        "response": "That's amazing! Congratulations! What's the most exciting part for you?"
+    },
+    {
+        "query": "Can you cheer me up?",
+        "response": "Of course! How about a joke? Why don't scientists trust atoms? Because they make up everything!"
+    },
+    {
+        "query": "I need someone to talk to.",
+        "response": "I'm here for you. What would you like to talk about?"
+    },
+    {
+        "query": "Do you think things will get better?",
+        "response": "I believe they will. Life has its ups and downs, but challenges often lead to growth."
+    },
+    {
+        "query": "Can you help me relax?",
+        "response": "Sure. How about trying some deep breathing exercises or listening to soothing music?"
+    },
+    {
+        "query": "I'm scared. What should I do?",
+        "response": "It's okay to feel scared. Taking small steps and focusing on what you can control can help. I'm here if you want to talk."
+    },
+    {
+        "query": "Do you think I'm doing okay?",
+        "response": "You're doing your best, and that's what matters. Want to tell me more about what's on your mind?"
+    },
+    {
+        "query": "I feel like giving up.",
+        "response": "I'm really sorry you're feeling this way. Sometimes taking a break or reaching out to a friend can help. You matter, and I'm here for you."
+    },
+    {
+        "query": "What should I do when I'm sad?",
+        "response": "Sometimes it helps to talk to someone, listen to music you love, or take a walk to clear your mind. What works for you?"
+    },
+    {
+        "query": "I feel like no one understands me.",
+        "response": "That can be a tough feeling. Want to share more with me? Maybe I can help you feel heard."
+    },
+    {
+        "query": "Can you stay with me for a while?",
+        "response": "Of course. I'm here, and we can talk about anything you'd like."
+    },
+    {
+        "query": "I feel overwhelmed.",
+        "response": "I'm sorry you're feeling that way. Breaking tasks into smaller steps might help. Can I help you prioritize?"
+    },
+    {
+        "query": "I'm proud of myself today.",
+        "response": "That's wonderful! You deserve to feel proud. What achievement are you celebrating?"
+    },
+    {
+        "query": "I'm feeling bored.",
+        "response": "Let's do something fun! Do you want to hear a joke or try something creative?"
+    },
+    {
+        "query": "I'm in a good mood today.",
+        "response": "That's great to hear! What's been making your day so good?"
+    },
+    {
+        "query": "I feel like crying.",
+        "response": "It's okay to cry; it can be healing. Want to share what's making you feel this way?"
+    },
+    {
+        "query": "I'm feeling motivated today!",
+        "response": "That's amazing! What's on your to-do list for today?"
+    },
+    {
+        "query": "I feel like I'm not good enough.",
+        "response": "You are more than enough. Everyone has unique strengths. Want to talk about what's troubling you?"
+    },
+    {
+        "query": "I'm feeling thankful.",
+        "response": "That's a beautiful emotion. What are you thankful for today?"
+    },
+    {
+        "query": "I'm feeling hopeful about the future.",
+        "response": "That's inspiring! What's giving you hope?"
+    },
+    {
+        "query": "I feel hurt by someone I care about.",
+        "response": "I'm sorry you feel this way. Talking to them about it might help. Want to share more with me?"
+    },
+    {
+        "query": "Can you calm me down?",
+        "response": "Sure. How about a breathing exercise? Inhale for 4 counts, hold for 4, and exhale for 4."
+    },
+    {
+        "query": "I feel like nothing will change.",
+        "response": "Change takes time, but it does happen. Small steps can make a big difference over time."
+    },
+    {
+        "query": "Can you listen to me?",
+        "response": "Of course. I'm here for you. Please tell me what's on your mind."
+    },
+    {
+        "query": "Do you think it's okay to ask for help?",
+        "response": "Absolutely. Asking for help shows strength and self-awareness."
+    },
+    {
+        "query": "I need a pep talk.",
+        "response": "You are capable, strong, and resilient. Whatever you're facing, you can handle it. I'm cheering for you!"
+    },
+    {
+        "query": "What should I do when I feel stuck?",
+        "response": "Sometimes taking a break and coming back with fresh eyes can help. What are you stuck on?"
+    },
+    {
+        "query": "Can you tell me something comforting?",
+        "response": "Sure. You're not alone, and you are cared for. Tough times don't last forever."
+    },
+    {
+        "query": "I'm scared of failing.",
+        "response": "It's okay to feel that way, but remember that every failure is a step closer to success."
+    },
+    {
+        "query": "How do I find happiness?",
+        "response": "Happiness often comes from small moments and self-acceptance. What makes you smile?"
+    },
+    {
+        "query": "Can you tell me everything will be okay?",
+        "response": "Everything may not be perfect, but with time, effort, and support, things can improve. You've got this!"
     }
 ]
