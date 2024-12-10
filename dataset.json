@@ -2286,5 +2286,261 @@
     {
         "query": "Can you tell me everything will be okay?",
         "response": "Everything may not be perfect, but with time, effort, and support, things can improve. You've got this!"
+    },
+    {
+        "query": "What's the largest country in the world?",
+        "response": "The largest country in the world by area is Russia."
+    },
+    {
+        "query": "Who invented the telephone?",
+        "response": "The telephone was invented by Alexander Graham Bell in 1876."
+    },
+    {
+        "query": "What is the capital of Japan?",
+        "response": "The capital of Japan is Tokyo."
+    },
+    {
+        "query": "How many continents are there on Earth?",
+        "response": "There are seven continents on Earth: Asia, Africa, North America, South America, Antarctica, Europe, and Australia."
+    },
+    {
+        "query": "What is the tallest mountain in the world?",
+        "response": "Mount Everest is the tallest mountain in the world, standing at 8,848 meters (29,029 feet) above sea level."
+    },
+    {
+        "query": "What is the speed of light?",
+        "response": "The speed of light is approximately 299,792 kilometers per second (186,282 miles per second) in a vacuum."
+    },
+    {
+        "query": "Who painted the Mona Lisa?",
+        "response": "The Mona Lisa was painted by Leonardo da Vinci."
+    },
+    {
+        "query": "What is the boiling point of water?",
+        "response": "Water boils at 100 degrees Celsius (212 degrees Fahrenheit) at sea level."
+    },
+    {
+        "query": "What is the chemical symbol for gold?",
+        "response": "The chemical symbol for gold is Au."
+    },
+    {
+        "query": "How many planets are in our solar system?",
+        "response": "There are eight planets in our solar system."
+    },
+    {
+        "query": "If I have 10 apples and give 4 to my friend, how many apples do I have left?",
+        "response": "If you give away 4 apples, you will have 6 apples left."
+    },
+    {
+        "query": "If a train travels at 60 km/h for 2 hours, how far does it go?",
+        "response": "The train travels 120 kilometers (60 km/h × 2 hours)."
+    },
+    {
+        "query": "If it rains, should I take an umbrella?",
+        "response": "Yes, taking an umbrella is a good idea when it rains."
+    },
+    {
+        "query": "If I flip a coin, what are the chances of it landing on heads?",
+        "response": "The chances are 50%, assuming a fair coin."
+    },
+    {
+        "query": "If a rectangle is 5 meters long and 3 meters wide, what is its area?",
+        "response": "The area of the rectangle is 15 square meters (5 × 3)."
+    },
+    {
+        "query": "If I need to arrive at 9 AM and it takes 30 minutes to travel, what time should I leave?",
+        "response": "You should leave at 8:30 AM to arrive on time."
+    },
+    {
+        "query": "If today is Monday, what day will it be in 3 days?",
+        "response": "It will be Thursday in 3 days."
+    },
+    {
+        "query": "If I double 6, what is the result?",
+        "response": "The result is 12."
+    },
+    {
+        "query": "If a car uses 8 liters of fuel for 100 kilometers, how much fuel will it use for 250 kilometers?",
+        "response": "It will use 20 liters of fuel (8 liters × 2.5)."
+    },
+    {
+        "query": "If two people can complete a task in 4 hours together, how long will it take one person alone?",
+        "response": "It depends on their individual rates, but together they complete 1/4 of the task per hour."
+    },
+    {
+        "query": "What is the smallest planet in our solar system?",
+        "response": "The smallest planet in our solar system is Mercury."
+    },
+    {
+        "query": "Who discovered gravity?",
+        "response": "Gravity was discovered by Sir Isaac Newton."
+    },
+    {
+        "query": "What is the largest mammal in the world?",
+        "response": "The largest mammal in the world is the blue whale."
+    },
+    {
+        "query": "What year did the Titanic sink?",
+        "response": "The Titanic sank in 1912."
+    },
+    {
+        "query": "How many bones are in the human body?",
+        "response": "There are 206 bones in the adult human body."
+    },
+    {
+        "query": "Who wrote 'Romeo and Juliet'?",
+        "response": "Romeo and Juliet was written by William Shakespeare."
+    },
+    {
+        "query": "What is the freezing point of water?",
+        "response": "Water freezes at 0 degrees Celsius (32 degrees Fahrenheit)."
+    },
+    {
+        "query": "What is the capital of Canada?",
+        "response": "The capital of Canada is Ottawa."
+    },
+    {
+        "query": "What is the primary source of energy for Earth?",
+        "response": "The primary source of energy for Earth is the Sun."
+    },
+    {
+        "query": "What is the chemical formula for water?",
+        "response": "The chemical formula for water is H₂O."
+    },
+    {
+        "query": "Which planet is known as the Red Planet?",
+        "response": "Mars is known as the Red Planet."
+    },
+    {
+        "query": "What is the tallest building in the world?",
+        "response": "As of now, the tallest building in the world is the Burj Khalifa in Dubai."
+    },
+    {
+        "query": "Who is known as the father of computers?",
+        "response": "Charles Babbage is known as the father of computers."
+    },
+    {
+        "query": "What is the deepest part of the ocean?",
+        "response": "The deepest part of the ocean is the Mariana Trench."
+    },
+    {
+        "query": "What is the name of the largest desert in the world?",
+        "response": "The largest desert in the world is the Sahara Desert."
+    },
+    {
+        "query": "How many hours are in a day?",
+        "response": "There are 24 hours in a day."
+    },
+    {
+        "query": "What is the hardest natural substance on Earth?",
+        "response": "The hardest natural substance on Earth is diamond."
+    },
+    {
+        "query": "Who was the first man to walk on the moon?",
+        "response": "The first man to walk on the moon was Neil Armstrong in 1969."
+    },
+    {
+        "query": "What is the main ingredient in bread?",
+        "response": "The main ingredient in bread is flour."
+    },
+    {
+        "query": "What is the national animal of India?",
+        "response": "The national animal of India is the Bengal tiger."
+    },
+    {
+        "query": "What gas do plants release during photosynthesis?",
+        "response": "Plants release oxygen during photosynthesis."
+    },
+    {
+        "query": "Who wrote the theory of relativity?",
+        "response": "The theory of relativity was written by Albert Einstein."
+    },
+    {
+        "query": "What is the most abundant gas in Earth's atmosphere?",
+        "response": "The most abundant gas in Earth's atmosphere is nitrogen."
+    },
+    {
+        "query": "What is the square root of 81?",
+        "response": "The square root of 81 is 9."
+    },
+    {
+        "query": "If I have 20 candies and give half to a friend, how many candies do I have left?",
+        "response": "You will have 10 candies left."
+    },
+    {
+        "query": "If a clock shows 3:15, what angle is between the hour and minute hands?",
+        "response": "The angle is 7.5 degrees."
+    },
+    {
+        "query": "If it takes 1 hour to bake a cake, how long will it take to bake 2 cakes in the same oven?",
+        "response": "It will take 1 hour, assuming both cakes fit in the oven at the same time."
+    },
+    {
+        "query": "If I save $5 every day, how much will I save in a week?",
+        "response": "You will save $35 in a week."
+    },
+    {
+        "query": "If I have 3 pairs of shoes, how many individual shoes do I have?",
+        "response": "You have 6 individual shoes."
+    },
+    {
+        "query": "If I double 15, what is the result?",
+        "response": "The result is 30."
+    },
+    {
+        "query": "If a train moves at 100 km/h for 3 hours, what is the distance covered?",
+        "response": "The train covers 300 kilometers."
+    },
+    {
+        "query": "If I subtract 7 from 10, what do I get?",
+        "response": "You get 3."
+    },
+    {
+        "query": "If two people split a bill of $50 equally, how much does each person pay?",
+        "response": "Each person pays $25."
+    },
+    {
+        "query": "If a triangle has sides of 3, 4, and 5, is it a right triangle?",
+        "response": "Yes, it is a right triangle (Pythagorean theorem)."
+    },
+    {
+        "query": "If a person runs at 10 km/h, how far will they go in 30 minutes?",
+        "response": "They will go 5 kilometers."
+    },
+    {
+        "query": "If today is Thursday, what day will it be in 5 days?",
+        "response": "It will be Tuesday in 5 days."
+    },
+    {
+        "query": "If a pizza is cut into 8 slices and I eat 3, how many slices are left?",
+        "response": "There are 5 slices left."
+    },
+    {
+        "query": "If you mix red and blue, what color do you get?",
+        "response": "You get purple."
+    },
+    {
+        "query": "If it’s 3 PM now, what time will it be in 4 hours?",
+        "response": "It will be 7 PM."
+    },
+    {
+        "query": "If I invest $100 at 5% annual interest, how much will I have after 1 year?",
+        "response": "You will have $105 after 1 year."
+    },
+    {
+        "query": "If there are 12 eggs in a dozen, how many eggs are in 3 dozen?",
+        "response": "There are 36 eggs in 3 dozen."
+    },
+    {
+        "query": "If I cut a pie into 6 equal parts and eat 2, what fraction is left?",
+        "response": "4/6 (or 2/3) of the pie is left."
+    },
+    {
+        "query": "If 5 people can finish a task in 10 hours, how long will it take 10 people?",
+        "response": "It will take 5 hours, assuming equal productivity."
+    },
+    {
+        "query": "If water freezes at 0°C, what is the equivalent temperature in Fahrenheit?",
+        "response": "The equivalent temperature is 32°F."
     }
 ]
