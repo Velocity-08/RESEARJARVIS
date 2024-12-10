@@ -1738,5 +1738,393 @@
     {
         "query": "What’s the smallest prime number?",
         "response": "The smallest prime number is 2."
+    },
+    {
+        "query": "What is the capital of Japan?",
+        "response": "The capital of Japan is Tokyo."
+    },
+    {
+        "query": "What’s the distance between Earth and the Moon?",
+        "response": "The average distance from Earth to the Moon is about 384,400 kilometers (238,855 miles)."
+    },
+    {
+        "query": "Who was the first person on the moon?",
+        "response": "Neil Armstrong was the first person to walk on the Moon on July 20, 1969."
+    },
+    {
+        "query": "What’s the tallest building in the world?",
+        "response": "The tallest building in the world is the Burj Khalifa in Dubai, standing at 828 meters (2,717 feet)."
+    },
+    {
+        "query": "What’s the smallest country in the world?",
+        "response": "The smallest country in the world is Vatican City, with an area of about 44 hectares (110 acres)."
+    },
+    {
+        "query": "Who wrote 'To Kill a Mockingbird'?",
+        "response": "'To Kill a Mockingbird' was written by Harper Lee."
+    },
+    {
+        "query": "How many bones are in the human body?",
+        "response": "There are 206 bones in the adult human body."
+    },
+    {
+        "query": "When did World War II end?",
+        "response": "World War II ended on September 2, 1945."
+    },
+    {
+        "query": "What’s the largest ocean in the world?",
+        "response": "The largest ocean in the world is the Pacific Ocean."
+    },
+    {
+        "query": "How long is the Great Wall of China?",
+        "response": "The Great Wall of China stretches over 21,000 kilometers (13,000 miles)."
+    },
+    {
+        "query": "What’s the official language of Brazil?",
+        "response": "The official language of Brazil is Portuguese."
+    },
+    {
+        "query": "What’s the population of India?",
+        "response": "The population of India is approximately 1.4 billion (as of 2023)."
+    },
+    {
+        "query": "Who invented the telephone?",
+        "response": "The telephone was invented by Alexander Graham Bell in 1876."
+    },
+    {
+        "query": "What is quantum physics?",
+        "response": "Quantum physics is the study of matter and energy at the most fundamental level, where particles can exist in multiple states simultaneously."
+    },
+    {
+        "query": "What’s the highest mountain in the world?",
+        "response": "Mount Everest is the highest mountain in the world, standing at 8,848 meters (29,029 feet)."
+    },
+    {
+        "query": "What is the speed of light?",
+        "response": "The speed of light in a vacuum is approximately 299,792 kilometers per second (186,282 miles per second)."
+    },
+    {
+        "query": "Can you tell me who won the last football World Cup?",
+        "response": "I currently don't have access to live sports data, but you can check recent World Cup winners through a sports app or website."
+    },
+    {
+        "query": "How many planets are in our solar system?",
+        "response": "There are eight planets in our solar system."
+    },
+    {
+        "query": "What is the largest land animal?",
+        "response": "The largest land animal is the African elephant."
+    },
+    {
+        "query": "Who painted the Mona Lisa?",
+        "response": "The Mona Lisa was painted by Leonardo da Vinci."
+    },
+    {
+        "query": "When did the Titanic sink?",
+        "response": "The Titanic sank on April 15, 1912."
+    },
+    {
+        "query": "What is the boiling point of water?",
+        "response": "The boiling point of water is 100°C (212°F) at sea level."
+    },
+    {
+        "query": "Who is the CEO of Tesla?",
+        "response": "As of 2023, the CEO of Tesla is Elon Musk."
+    },
+    {
+        "query": "What’s the currency of Japan?",
+        "response": "The currency of Japan is the Japanese yen (¥)."
+    },
+    {
+        "query": "What’s the largest island in the world?",
+        "response": "Greenland is the largest island in the world by area."
+    },
+    {
+        "query": "How many stars are in the Milky Way?",
+        "response": "There are an estimated 100 billion to 400 billion stars in the Milky Way galaxy."
+    },
+    {
+        "query": "What’s the formula for water?",
+        "response": "The chemical formula for water is H₂O."
+    },
+    {
+        "query": "Can you help me with this homework?",
+        "response": "I can assist with explanations or guide you, but I can’t complete your homework for you."
+    },
+    {
+        "query": "When did the first manned mission to space take place?",
+        "response": "The first manned mission to space was launched on April 12, 1961, with Yuri Gagarin aboard Vostok 1."
+    },
+    {
+        "query": "What is the Eiffel Tower made of?",
+        "response": "The Eiffel Tower is made of iron."
+    },
+    {
+        "query": "Can you tell me the weather for today?",
+        "response": "I can't access live weather data at the moment, but you can check a weather app or website."
+    },
+    {
+        "query": "Who discovered penicillin?",
+        "response": "Penicillin was discovered by Alexander Fleming in 1928."
+    },
+    {
+        "query": "What is the meaning of life?",
+        "response": "The meaning of life is a deeply philosophical question, and answers vary depending on cultural, philosophical, and personal perspectives."
+    },
+    {
+        "query": "What’s the hardest known material?",
+        "response": "The hardest known material is graphene, which is a single layer of carbon atoms arranged in a hexagonal lattice."
+    },
+    {
+        "query": "What is an atom?",
+        "response": "An atom is the smallest unit of matter, made up of protons, neutrons, and electrons."
+    },
+    {
+        "query": "What’s the history of the internet?",
+        "response": "The internet was developed in the 1960s, with its origins in the ARPANET project. It became publicly accessible in the early 1990s."
+    },
+    {
+        "query": "What is the population of the United States?",
+        "response": "The population of the United States is approximately 331 million (as of 2023)."
+    },
+    {
+        "query": "Who is the author of '1984'?",
+        "response": "'1984' was written by George Orwell."
+    },
+    {
+        "query": "What’s the longest river in the world?",
+        "response": "The longest river in the world is the Nile River, which is about 6,650 kilometers (4,130 miles) long."
+    },
+    {
+        "query": "Can you tell me about the theory of relativity?",
+        "response": "The theory of relativity, developed by Albert Einstein, includes two parts: special relativity and general relativity. It revolutionized our understanding of space, time, and gravity."
+    },
+    {
+        "query": "Who was the first woman to fly solo across the Atlantic?",
+        "response": "Amelia Earhart was the first woman to fly solo across the Atlantic, in 1932."
+    },
+    {
+        "query": "When did the Renaissance period begin?",
+        "response": "The Renaissance period began in the 14th century, around the 1300s."
+    },
+    {
+        "query": "What’s the speed of sound?",
+        "response": "The speed of sound is approximately 343 meters per second (1,125 feet per second) in dry air at 20°C (68°F)."
+    },
+    {
+        "query": "What’s the circumference of the Earth?",
+        "response": "The Earth's circumference is approximately 40,075 kilometers (24,901 miles)."
+    },
+    {
+        "query": "Who was the first president of the United States?",
+        "response": "The first president of the United States was George Washington."
+    },
+    {
+        "query": "What is the primary function of the heart?",
+        "response": "The primary function of the heart is to pump blood throughout the body, supplying oxygen and nutrients to tissues and removing waste products."
+    },
+    {
+        "query": "Can you convert 100 miles to kilometers?",
+        "response": "100 miles is approximately 160.93 kilometers."
+    },
+    {
+        "query": "How does photosynthesis work?",
+        "response": "Photosynthesis is the process by which green plants and some other organisms use sunlight to synthesize food from carbon dioxide and water."
+    },
+    {
+        "query": "What is the chemical symbol for gold?",
+        "response": "The chemical symbol for gold is Au."
+    },
+    {
+        "query": "What’s the longest highway in the world?",
+        "response": "The longest highway in the world is the Pan-American Highway, which stretches from Prudhoe Bay, Alaska, to Ushuaia, Argentina, covering over 19,000 miles."
+    },
+    {
+        "query": "Who discovered America?",
+        "response": "Christopher Columbus is credited with discovering America in 1492, though indigenous peoples had already lived there for thousands of years."
+    },
+    {
+        "query": "What is the capital of France?",
+        "response": "The capital of France is Paris."
+    },
+    {
+        "query": "How many continents are there?",
+        "response": "There are seven continents: Africa, Antarctica, Asia, Europe, North America, Australia, and South America."
+    },
+    {
+        "query": "Who invented the airplane?",
+        "response": "The Wright brothers, Orville and Wilbur Wright, invented the first successful airplane."
+    },
+    {
+        "query": "What is the deepest part of the ocean?",
+        "response": "The Mariana Trench in the Pacific Ocean is the deepest part of the world's oceans, reaching a depth of about 36,000 feet (10,994 meters)."
+    },
+    {
+        "query": "How does the internet work?",
+        "response": "The internet works by connecting devices through a global network of servers that transmit data packets across the world."
+    },
+    {
+        "query": "What’s the largest desert in the world?",
+        "response": "The largest desert in the world is the Antarctic Desert, covering about 14 million square kilometers (5.4 million square miles)."
+    },
+    {
+        "query": "What is the tallest animal in the world?",
+        "response": "The giraffe is the tallest land animal, with males reaching up to 18 feet (5.5 meters) tall."
+    },
+    {
+        "query": "Who was the first woman in space?",
+        "response": "Valentina Tereshkova, a Soviet cosmonaut, was the first woman in space, launching on June 16, 1963."
+    },
+    {
+        "query": "What’s the largest planet in our solar system?",
+        "response": "The largest planet in our solar system is Jupiter."
+    },
+    {
+        "query": "What is the longest river in Africa?",
+        "response": "The longest river in Africa is the Nile River."
+    },
+    {
+        "query": "How far is the Earth from the Sun?",
+        "response": "The Earth is approximately 93 million miles (150 million kilometers) from the Sun."
+    },
+    {
+        "query": "What is the hottest planet in our solar system?",
+        "response": "Venus is the hottest planet in our solar system, with surface temperatures reaching up to 900°F (475°C)."
+    },
+    {
+        "query": "Can you tell me about the Eiffel Tower?",
+        "response": "The Eiffel Tower is an iconic iron lattice tower located in Paris, France, built between 1887 and 1889."
+    },
+    {
+        "query": "Who discovered gravity?",
+        "response": "Sir Isaac Newton is credited with discovering the law of gravity in the 17th century."
+    },
+    {
+        "query": "What is the largest lake in the world?",
+        "response": "The largest lake by surface area is the Caspian Sea, covering about 371,000 square kilometers (143,000 square miles)."
+    },
+    {
+        "query": "How do plants absorb water?",
+        "response": "Plants absorb water through their roots, which then travel through the stem and into the leaves."
+    },
+    {
+        "query": "Who invented the light bulb?",
+        "response": "Thomas Edison is credited with inventing the practical light bulb in 1879."
+    },
+    {
+        "query": "What is the Pythagorean Theorem?",
+        "response": "The Pythagorean Theorem states that in a right triangle, the square of the hypotenuse is equal to the sum of the squares of the other two sides."
+    },
+    {
+        "query": "What’s the oldest living tree?",
+        "response": "The oldest known living tree is a bristlecone pine named Methuselah, located in California, estimated to be over 4,800 years old."
+    },
+    {
+        "query": "Can you convert 100 kilometers to miles?",
+        "response": "100 kilometers is approximately 62.14 miles."
+    },
+    {
+        "query": "Who invented the computer?",
+        "response": "The first modern computer was invented by Charles Babbage in the 1830s, but it wasn't fully realized until later innovations."
+    },
+    {
+        "query": "What’s the largest animal ever to exist?",
+        "response": "The blue whale is the largest animal to have ever existed, reaching lengths of up to 100 feet (30 meters)."
+    },
+    {
+        "query": "What’s the most populous country in the world?",
+        "response": "The most populous country in the world is China, followed closely by India."
+    },
+    {
+        "query": "How many bones are in a human hand?",
+        "response": "There are 27 bones in the human hand."
+    },
+    {
+        "query": "What’s the longest word in the English language?",
+        "response": "The longest word in the English language is 'pneumonoultramicroscopicsilicovolcanoconiosis,' a lung disease caused by inhaling very fine silicate or quartz dust."
+    },
+    {
+        "query": "Who invented the telephone?",
+        "response": "The telephone was invented by Alexander Graham Bell in 1876."
+    },
+    {
+        "query": "How does photosynthesis work?",
+        "response": "Photosynthesis is the process by which plants convert light energy into chemical energy, producing oxygen and glucose from carbon dioxide and water."
+    },
+    {
+        "query": "What is the fastest animal in the world?",
+        "response": "The fastest animal in the world is the peregrine falcon, which can reach speeds of over 240 miles per hour (386 kilometers per hour) during flight."
+    },
+    {
+        "query": "Who was the first man to walk on the moon?",
+        "response": "Neil Armstrong was the first person to walk on the moon, on July 20, 1969."
+    },
+    {
+        "query": "What is the most common gas in Earth's atmosphere?",
+        "response": "The most common gas in Earth's atmosphere is nitrogen, making up about 78% of the atmosphere."
+    },
+    {
+        "query": "What is the longest mountain range in the world?",
+        "response": "The longest mountain range in the world is the Andes, stretching along the western edge of South America for about 7,000 kilometers (4,350 miles)."
+    },
+    {
+        "query": "How does a computer process information?",
+        "response": "A computer processes information using a series of steps that include input, processing, storage, and output, all managed by the central processing unit (CPU)."
+    },
+    {
+        "query": "What is the most famous landmark in Egypt?",
+        "response": "The most famous landmark in Egypt is the Great Pyramid of Giza."
+    },
+    {
+        "query": "Who was the first president of the United States?",
+        "response": "The first president of the United States was George Washington."
+    },
+    {
+        "query": "What is the primary function of the heart?",
+        "response": "The primary function of the heart is to pump blood throughout the body, supplying oxygen and nutrients to tissues and removing waste products."
+    },
+    {
+        "query": "What is the chemical formula for water?",
+        "response": "The chemical formula for water is H₂O."
+    },
+    {
+        "query": "What is the freezing point of water?",
+        "response": "The freezing point of water is 0°C (32°F)."
+    },
+    {
+        "query": "How do volcanoes erupt?",
+        "response": "Volcanoes erupt when magma from beneath the Earth's crust rises to the surface, causing a release of gases and molten rock."
+    },
+    {
+        "query": "What is the hardest material on Earth?",
+        "response": "The hardest known material on Earth is diamond."
+    },
+    {
+        "query": "What is the process of natural selection?",
+        "response": "Natural selection is the process by which organisms better adapted to their environment tend to survive and reproduce, passing on advantageous traits to their offspring."
+    },
+    {
+        "query": "What is a black hole?",
+        "response": "A black hole is a region of space where gravity is so strong that not even light can escape."
+    },
+    {
+        "query": "What is the capital of Canada?",
+        "response": "The capital of Canada is Ottawa."
+    },
+    {
+        "query": "Can you tell me the history of the internet?",
+        "response": "The internet's history began in the 1960s as ARPANET, a U.S. government-funded project. It became publicly accessible in the 1990s."
+    },
+    {
+        "query": "What is the world's largest ocean?",
+        "response": "The world's largest ocean is the Pacific Ocean."
+    },
+    {
+        "query": "How does the human digestive system work?",
+        "response": "The human digestive system breaks down food into nutrients, which are absorbed into the bloodstream. It includes the mouth, esophagus, stomach, and intestines."
+    },
+    {
+        "query": "What is the tallest waterfall in the world?",
+        "response": "The tallest waterfall in the world is Angel Falls in Venezuela, with a height of 979 meters (3,212 feet)."
     }
 ]
