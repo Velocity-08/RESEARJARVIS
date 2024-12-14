@@ -1,8 +1,8 @@
 import re
 
 # Define file paths
-input_file = "raw_dataset.txt"  # Input: Raw dataset
-output_file = "cleaned_dataset.txt"  # Output: Cleaned dataset
+input_file = "raw_dataset.json"  # Input: Raw dataset
+output_file = "cleaned_dataset.json"  # Output: Cleaned dataset
 
 # Function to clean text
 def clean_text(text):
