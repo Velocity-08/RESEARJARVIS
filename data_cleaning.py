@@ -1,5 +1,5 @@
-import re
 import json
+import re
 
 # Define file paths
 input_file = "raw_dataset.json"  # Input: Raw dataset in JSON format
@@ -21,25 +21,25 @@ def clean_text(text):
 
 # Process the dataset
 def clean_dataset(input_path, output_path):
-    try:
-        # Read the raw dataset from JSON file
-        with open(input_path, "r", encoding="utf-8") as infile:
-            raw_data = json.load(infile)
+    with open(input_path, "r", encoding="utf-8") as infile:
+        raw_data = json.load(infile)
+
+    cleaned_data = []
+
+    for entry in raw_data:
+        # Clean the 'query' and 'response' fields
+        if "query" in entry:
+            entry["query"] = clean_text(entry["query"])
+        if "response" in entry:
+            entry["response"] = clean_text(entry["response"])
         
-        # Ensure the data is an array
-        if not isinstance(raw_data, list):
-            raise ValueError("Input JSON must be an array of strings.")
-        
-        # Clean each entry
-        cleaned_data = [clean_text(entry) for entry in raw_data if isinstance(entry, str)]
-        
-        # Save the cleaned dataset to a JSON file
-        with open(output_path, "w", encoding="utf-8") as outfile:
-            json.dump(cleaned_data, outfile, ensure_ascii=False, indent=4)
-        
-        print(f"Cleaned data saved to {output_path}")
-    except Exception as e:
-        print(f"An error occurred: {e}")
+        cleaned_data.append(entry)
+
+    # Save cleaned data to output JSON file
+    with open(output_path, "w", encoding="utf-8") as outfile:
+        json.dump(cleaned_data, outfile, indent=4)
+
+    print(f"Cleaned data saved to {output_path}")
 
 # Run the cleaning process
 clean_dataset(input_file, output_file)
