@@ -2583,96 +2583,46 @@
         "query": "Can you create a story about a young wizard who loses his powers?",
         "response": "Leo was a promising young wizard until a rival cursed him to lose his powers. Instead of giving up, he studied ancient magic and learned to use his mind and courage. In time, he defeated the rival, broke the curse, and discovered he was stronger than ever."
     },
-    {
-        "query": "Write a poem about a lonely robot.",
-        "response": "In a world of circuits and gears,  
-The robot sat alone with its fears.  
-It dreamed of friends and skies of blue,  
-But found solace in tasks it knew.  
-One day it learned, through kindness and care,  
-Loneliness fades when love is shared."
-    },
-    {
-        "query": "Write a poem about the ocean.",
-        "response": "Beneath the waves so deep and wide,  
-Lies a world where mysteries hide.  
-The ocean whispers tales of old,  
-Of treasures lost and secrets untold.  
-Its beauty vast, its power great,  
-A timeless force we contemplate."
-    },
-    {
-        "query": "Can you write song lyrics about dreaming big?",
-        "response": "Verse 1:  
-Close your eyes, see the stars align,  
-The universe whispers, 'Your dreams are mine.'  
-Step by step, you'll pave your way,  
-Tomorrow starts with hope today.  
-Chorus:  
-Dream big, reach the skies,  
-Let your heart ignite, let your spirit rise.  
-No dream’s too far, no goal’s too high,  
-With courage, you’ll soar and fly."
-    },
-    {
-        "query": "Write a haiku about winter.",
-        "response": "Snow falls silently,  
-Blanket white covers the earth,  
-Winter’s breath is cold."
-    },
-    {
-        "query": "Write a poem about a starry night.",
-        "response": "Under the canopy of endless stars,  
-Dreams take flight, and hearts unbar.  
-Each twinkle a story, a beacon of light,  
-Guiding lost souls through the night."
-    },
-    {
-        "query": "Write song lyrics about friendship.",
-        "response": "Verse 1:  
-Through the highs and the lows we stand,  
-Side by side, hand in hand.  
-When the world feels cold and gray,  
-Your smile brightens my way.  
-Chorus:  
-Friendship's a melody, sweet and true,  
-A song in my heart because of you.  
-No storm can break this bond we share,  
-Together forever, we’ll always care."
-    },
-    {
-        "query": "Write a poem about a sunrise.",
-        "response": "The dawn breaks with a gentle hue,  
-Sky painted in orange and blue.  
-A promise of hope, a brand-new day,  
-Chasing the darkness far away."
-    },
-    {
-        "query": "Write a haiku about autumn leaves.",
-        "response": "Crimson leaves cascade,  
-Dancing winds embrace the trees,  
-Autumn's fleeting charm."
-    },
-    {
-        "query": "Write a poem about exploring space.",
-        "response": "Into the void, where stars reside,  
-A cosmic journey, far and wide.  
-Through galaxies vast, and worlds unknown,  
-A quest for truths, where dreams are sown."
-    },
-    {
-        "query": "Write song lyrics about hope.",
-        "response": "Verse 1:  
-When the night feels endless, and shadows loom,  
-Hope’s a light that pierces the gloom.  
-Hold on tight, let your heart believe,  
-Tomorrow’s a gift we’ll soon receive.  
-Chorus:  
-Hope shines brighter than the sun,  
-A spark in the dark for everyone.  
-Through every storm, through every fight,  
-Hope will guide us to the light."
-    },
+        {
+            "query": "Write a poem about a lonely robot.",
+            "response": "In a world of circuits and gears,\\nThe robot sat alone with its fears.\\nIt dreamed of friends and skies of blue,\\nBut found solace in tasks it knew.\\nOne day it learned, through kindness and care,\\nLoneliness fades when love is shared."
+        },
+        {
+            "query": "Write a poem about the ocean.",
+            "response": "Beneath the waves so deep and wide,\\nLies a world where mysteries hide.\\nThe ocean whispers tales of old,\\nOf treasures lost and secrets untold.\\nIts beauty vast, its power great,\\nA timeless force we contemplate."
+        },
+        {
+            "query": "Can you write song lyrics about dreaming big?",
+            "response": "Verse 1: \\nClose your eyes, see the stars align,\\nThe universe whispers, 'Your dreams are mine.'\\nStep by step, you'll pave your way,\\nTomorrow starts with hope today.\\nChorus: \\nDream big, reach the skies,\\nLet your heart ignite, let your spirit rise.\\nNo dream’s too far, no goal’s too high,\\nWith courage, you’ll soar and fly."
+        },
+        {
+            "query": "Write a haiku about winter.",
+            "response": "Snow falls silently,\\nBlanket white covers the earth,\\nWinter’s breath is cold."
+        },
+        {
+            "query": "Write a poem about a starry night.",
+            "response": "Under the canopy of endless stars,\\nDreams take flight, and hearts unbar.\\nEach twinkle a story, a beacon of light,\\nGuiding lost souls through the night."
+        },
+        {
+            "query": "Write song lyrics about friendship.",
+            "response": "Verse 1: \\nThrough the highs and the lows we stand,\\nSide by side, hand in hand.\\nWhen the world feels cold and gray,\\nYour smile brightens my way.\\nChorus: \\nFriendship's a melody, sweet and true,\\nA song in my heart because of you.\\nNo storm can break this bond we share,\\nTogether forever, we’ll always care."
+        },
+        {
+            "query": "Write a poem about a sunrise.",
+            "response": "The dawn breaks with a gentle hue,\\nSky painted in orange and blue.\\nA promise of hope, a brand-new day,\\nChasing the darkness far away."
+        },
+        {
+            "query": "Write a haiku about autumn leaves.",
+            "response": "Crimson leaves cascade,\\nDancing winds embrace the trees,\\nAutumn's fleeting charm."
+        },
+        {
+            "query": "Write a poem about exploring space.",
+            "response": "Into the void, where stars reside,\\nA cosmic journey, far and wide.\\nThrough galaxies vast, and worlds unknown,\\nA quest for truths, where dreams are sown."
+        },
+        {
+            "query": "Write song lyrics about hope.",
+            "response": "Verse 1: \\nWhen the night feels endless, and shadows loom,\\nHope’s a light that pierces the gloom.\\nHold on tight, let your heart believe,\\nTomorrow’s a gift we’ll soon receive.\\nChorus: \\nHope shines brighter than the sun,\\nA spark in the dark for everyone.\\nThrough every storm, through every fight,\\nHope will guide us to the light."
+        },
     {
         "query": "Tell me a story about a girl who befriends a dragon.",
         "response": "Once upon a time, a girl named Aria found a wounded dragon in the forest. She nursed it back to health, and they became best friends. Together, they protected the kingdom from invaders, proving that even the fiercest creatures can be gentle with the right heart."
@@ -2713,91 +2663,47 @@ Hope will guide us to the light."
         "query": "Tell me a story about an inventor who creates a teleportation device.",
         "response": "Dr. Kay invented a teleportation device to visit her family across the world. When her invention fell into the wrong hands, she used her wits to retrieve it. In the process, she realized her invention could unite people, making the world feel smaller."
     },
-    {
-        "query": "Write a poem about the stars.",
-        "response": "Twinkling gems in the velvet sky,  
-Whispering secrets as they fly.  
-Guiding sailors through the dark,  
-Each a wish, a hopeful spark."
-    },
-    {
-        "query": "Write a haiku about spring.",
-        "response": "Blossoms in full bloom,  
-Warm winds carry life anew,  
-Spring’s gentle embrace."
-    },
-    {
-        "query": "Write song lyrics about courage.",
-        "response": "Verse 1:  
-Stand tall, when the shadows fall,  
-Find your strength, hear the call.  
-The road is tough, but you’re not alone,  
-With courage, you’ve grown.  
-Chorus:  
-Brave hearts never fall,  
-Through the storms, we conquer all.  
-With every step, we rise,  
-Courage lifts us to the skies."
-    },
-    {
-        "query": "Write a poem about rain.",
-        "response": "The rain falls soft, a soothing sound,  
-Life’s renewal all around.  
-Each droplet whispers, calm and true,  
-A promise of beginnings new."
-    },
-    {
-        "query": "Write song lyrics about nature.",
-        "response": "Verse 1:  
-Feel the breeze, hear the trees,  
-Nature’s melody sets us free.  
-The river flows, the mountains stand,  
-A masterpiece carved by hand.  
-Chorus:  
-Oh, nature’s song, we sing along,  
-In its embrace, we belong.  
-Through every stream, through every stone,  
-It’s the place we call our own."
-    },
-    {
-        "query": "Write a poem about dreams.",
-        "response": "Dreams take flight on silent wings,  
-A world of hope, where the heart sings.  
-Through shadows deep and skies so wide,  
-Dreams are where our fears subside."
-    },
-    {
-        "query": "Write a haiku about sunsets.",
-        "response": "Golden skies descend,  
-Night whispers upon the breeze,  
-Day bids soft farewell."
-    },
-    {
-        "query": "Write song lyrics about adventure.",
-        "response": "Verse 1:  
-Pack your bag, the journey calls,  
-Through unknown paths and waterfalls.  
-Every step’s a story told,  
-An adventure worth more than gold.  
-Chorus:  
-On the road, we find our way,  
-Through the night, into the day.  
-Every turn, every bend,  
-Adventure’s magic never ends."
-    },
-    {
-        "query": "Write a poem about the moon.",
-        "response": "The moon ascends, a beacon bright,  
-Guardian of the silent night.  
-Its glow inspires, its presence serene,  
-A timeless wonder, pure and keen."
-    },
-    {
-        "query": "Write a haiku about love.",
-        "response": "Hearts intertwined close,  
-A bond unbroken by time,  
-Love's eternal flame."
-    },
+        {
+            "query": "Write a poem about the stars.",
+            "response": "Twinkling gems in the velvet sky,\\nWhispering secrets as they fly.\\nGuiding sailors through the dark,\\nEach a wish, a hopeful spark."
+        },
+        {
+            "query": "Write a haiku about spring.",
+            "response": "Blossoms in full bloom,\\nWarm winds carry life anew,\\nSpring’s gentle embrace."
+        },
+        {
+            "query": "Write song lyrics about courage.",
+            "response": "Verse 1: \\nStand tall, when the shadows fall,\\nFind your strength, hear the call.\\nThe road is tough, but you’re not alone,\\nWith courage, you’ve grown.\\nChorus: \\nBrave hearts never fall,\\nThrough the storms, we conquer all.\\nWith every step, we rise,\\nCourage lifts us to the skies."
+        },
+        {
+            "query": "Write a poem about rain.",
+            "response": "The rain falls soft, a soothing sound,\\nLife’s renewal all around.\\nEach droplet whispers, calm and true,\\nA promise of beginnings new."
+        },
+        {
+            "query": "Write song lyrics about nature.",
+            "response": "Verse 1: \\nFeel the breeze, hear the trees,\\nNature’s melody sets us free.\\nThe river flows, the mountains stand,\\nA masterpiece carved by hand.\\nChorus: \\nOh, nature’s song, we sing along,\\nIn its embrace, we belong.\\nThrough every stream, through every stone,\\nIt’s the place we call our own."
+        },
+        {
+            "query": "Write a poem about dreams.",
+            "response": "Dreams take flight on silent wings,\\nA world of hope, where the heart sings.\\nThrough shadows deep and skies so wide,\\nDreams are where our fears subside."
+        },
+        {
+            "query": "Write a haiku about sunsets.",
+            "response": "Golden skies descend,\\nNight whispers upon the breeze,\\nDay bids soft farewell."
+        },
+        {
+            "query": "Write song lyrics about adventure.",
+            "response": "Verse 1: \\nPack your bag, the journey calls,\\nThrough unknown paths and waterfalls.\\nEvery step’s a story told,\\nAn adventure worth more than gold.\\nChorus: \\nOn the road, we find our way,\\nThrough the night, into the day.\\nEvery turn, every bend,\\nAdventure’s magic never ends."
+        },
+        {
+            "query": "Write a poem about the moon.",
+            "response": "The moon ascends, a beacon bright,\\nGuardian of the silent night.\\nIts glow inspires, its presence serene,\\nA timeless wonder, pure and keen."
+        },
+        {
+            "query": "Write a haiku about love.",
+            "response": "Hearts intertwined close,\\nA bond unbroken by time,\\nLove's eternal flame."
+        },
+    
     {
         "query": "Tell me a story about a girl who befriends a dragon.",
         "response": "Once upon a time, a girl named Aria found a wounded dragon in the forest. She nursed it back to health, and they became best friends. Together, they protected the kingdom from invaders, proving that even the fiercest creatures can be gentle with the right heart."
@@ -2826,57 +2732,29 @@ Love's eternal flame."
         "query": "Tell me a story about a ghost who wanted to help people.",
         "response": "Lily the ghost haunted an old house, but not to scare people—she wanted to guide lost travelers. One day, a family moved in, and Lily helped them find a hidden treasure that saved their home. They lived happily, and Lily finally felt at peace."
     },
-    {
-        "query": "Write a poem about the stars.",
-        "response": "Twinkling gems in the velvet sky,  
-Whispering secrets as they fly.  
-Guiding sailors through the dark,  
-Each a wish, a hopeful spark."
-    },
-    {
-        "query": "Write a haiku about spring.",
-        "response": "Blossoms in full bloom,  
-Warm winds carry life anew,  
-Spring’s gentle embrace."
-    },
-    {
-        "query": "Write song lyrics about courage.",
-        "response": "Verse 1:  
-Stand tall, when the shadows fall,  
-Find your strength, hear the call.  
-The road is tough, but you’re not alone,  
-With courage, you’ve grown.  
-Chorus:  
-Brave hearts never fall,  
-Through the storms, we conquer all.  
-With every step, we rise,  
-Courage lifts us to the skies."
-    },
-    {
-        "query": "Write a poem about rain.",
-        "response": "The rain falls soft, a soothing sound,  
-Life’s renewal all around.  
-Each droplet whispers, calm and true,  
-A promise of beginnings new."
-    },
-    {
-        "query": "Write song lyrics about nature.",
-        "response": "Verse 1:  
-Feel the breeze, hear the trees,  
-Nature’s melody sets us free.  
-The river flows, the mountains stand,  
-A masterpiece carved by hand.  
-Chorus:  
-Oh, nature’s song, we sing along,  
-In its embrace, we belong.  
-Through every stream, through every stone,  
-It’s the place we call our own."
-    },
-    {
-        "query": "Write a poem about dreams.",
-        "response": "Dreams take flight on silent wings,  
-A world of hope, where the heart sings.  
-Through shadows deep and skies so wide,  
-Dreams are where our fears subside."
-    }
+            {
+                "query": "Write a poem about the stars.",
+                "response": "Twinkling gems in the velvet sky,\\nWhispering secrets as they fly.\\nGuiding sailors through the dark,\\nEach a wish, a hopeful spark."
+            },
+            {
+                "query": "Write a haiku about spring.",
+                "response": "Blossoms in full bloom,\\nWarm winds carry life anew,\\nSpring’s gentle embrace."
+            },
+            {
+                "query": "Write song lyrics about courage.",
+                "response": "Verse 1: \\nStand tall, when the shadows fall,\\nFind your strength, hear the call.\\nThe road is tough, but you’re not alone,\\nWith courage, you’ve grown.\\nChorus: \\nBrave hearts never fall,\\nThrough the storms, we conquer all.\\nWith every step, we rise,\\nCourage lifts us to the skies."
+            },
+            {
+                "query": "Write a poem about rain.",
+                "response": "The rain falls soft, a soothing sound,\\nLife’s renewal all around.\\nEach droplet whispers, calm and true,\\nA promise of beginnings new."
+            },
+            {
+                "query": "Write song lyrics about nature.",
+                "response": "Verse 1: \\nFeel the breeze, hear the trees,\\nNature’s melody sets us free.\\nThe river flows, the mountains stand,\\nA masterpiece carved by hand.\\nChorus: \\nOh, nature’s song, we sing along,\\nIn its embrace, we belong.\\nThrough every stream, through every stone,\\nIt’s the place we call our own."
+            },
+            {
+                "query": "Write a poem about dreams.",
+                "response": "Dreams take flight on silent wings,\\nA world of hope, where the heart sings.\\nThrough shadows deep and skies so wide,\\nDreams are where our fears subside."
+            }
+        
 ]
