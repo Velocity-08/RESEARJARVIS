@@ -87,4 +87,3 @@ model = TransformerChatbot(
 )
 
 print(model)
-  
