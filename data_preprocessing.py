@@ -1,42 +1,48 @@
+from transformers import GPT2Tokenizer, BertTokenizer
 import json
-from transformers import BertTokenizer  # Replace with your preferred tokenizer (e.g., GPT, custom)
 
 # Define file paths
 input_file = "filtered_dataset.json"  # Input: Filtered dataset
-output_file = "preprocessed_dataset.json"  # Output: Preprocessed dataset
+output_file = "tokenized_dataset.json"  # Output: Tokenized dataset
 
-# Initialize tokenizer
-tokenizer = BertTokenizer.from_pretrained("bert-base-uncased")  # Pretrained tokenizer
+# Initialize tokenizers
+gpt_tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
+bert_tokenizer = BertTokenizer.from_pretrained("bert-base-uncased")
 
-# Function to preprocess dataset
-def preprocess_dataset(input_path, output_path):
+# Tokenization function
+def tokenize_dataset(input_path, output_path):
     with open(input_path, "r", encoding="utf-8") as infile:
         filtered_data = json.load(infile)
 
-    preprocessed_data = []
+    tokenized_data = []
 
     for entry in filtered_data:
-        # Tokenize 'query' and 'response'
-        query_tokens = tokenizer.tokenize(entry["query"])
-        response_tokens = tokenizer.tokenize(entry["response"])
-        
-        # Convert tokens to IDs (numerical format)
-        query_ids = tokenizer.convert_tokens_to_ids(query_tokens)
-        response_ids = tokenizer.convert_tokens_to_ids(response_tokens)
+        query = entry["query"]
+        response = entry["response"]
 
-        # Store preprocessed data
-        preprocessed_data.append({
-            "query_tokens": query_tokens,
-            "response_tokens": response_tokens,
-            "query_ids": query_ids,
-            "response_ids": response_ids
+        # Tokenize using GPT tokenizer
+        gpt_query_tokens = gpt_tokenizer.encode(query, add_special_tokens=True)
+        gpt_response_tokens = gpt_tokenizer.encode(response, add_special_tokens=True)
+
+        # Tokenize using BERT tokenizer
+        bert_query_tokens = bert_tokenizer.encode(query, add_special_tokens=True)
+        bert_response_tokens = bert_tokenizer.encode(response, add_special_tokens=True)
+
+        # Append tokenized results
+        tokenized_data.append({
+            "query": query,
+            "response": response,
+            "gpt_query_tokens": gpt_query_tokens,
+            "gpt_response_tokens": gpt_response_tokens,
+            "bert_query_tokens": bert_query_tokens,
+            "bert_response_tokens": bert_response_tokens
         })
 
-    # Save preprocessed data to output JSON file
+    # Save tokenized data to output JSON file
     with open(output_path, "w", encoding="utf-8") as outfile:
-        json.dump(preprocessed_data, outfile, indent=4)
+        json.dump(tokenized_data, outfile, indent=4)
 
-    print(f"Preprocessed data saved to {output_path}")
+    print(f"Tokenized data saved to {output_file}")
 
-# Run the preprocessing process
-preprocess_dataset(input_file, output_file)
+# Run the tokenization process
+tokenize_dataset(input_file, output_file)
