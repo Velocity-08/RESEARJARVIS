@@ -86,6 +86,7 @@ batch_size = 16
 learning_rate = 0.001
 epochs = 10
 dataset_path = "cleaned_dataset.json"
+model_save_path = "trained_model.pth"
 
 # Use the BERT tokenizer
 tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
@@ -135,3 +136,7 @@ for epoch in range(epochs):
         epoch_loss += loss.item()
 
     print(f"Epoch {epoch + 1}/{epochs}, Loss: {epoch_loss / len(data_loader)}")
+
+# Save the trained model
+torch.save(model.state_dict(), model_save_path)
+print(f"Model saved successfully to {model_save_path}")
