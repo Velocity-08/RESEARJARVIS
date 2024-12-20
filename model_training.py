@@ -42,7 +42,7 @@ class TransformerChatbot(nn.Module):
         return output
 
 # Dataset Preparation
-class TokenizedChatbotDataset(Dataset):
+class ChatbotDataset(Dataset):
     def __init__(self, dataset_path, max_seq_len):
         with open(dataset_path, 'r') as f:
             self.data = json.load(f)
@@ -52,8 +52,8 @@ class TokenizedChatbotDataset(Dataset):
         return len(self.data)
 
     def __getitem__(self, idx):
-        query_tokens = self.data[idx]['query'][:self.max_seq_len]
-        response_tokens = self.data[idx]['response'][:self.max_seq_len]
+        query_tokens = self.data[idx]['gpt_query_tokens'][:self.max_seq_len]
+        response_tokens = self.data[idx]['gpt_response_tokens'][:self.max_seq_len]
 
         query_tokens = self.pad_sequence(query_tokens)
         response_tokens = self.pad_sequence(response_tokens)
@@ -61,12 +61,13 @@ class TokenizedChatbotDataset(Dataset):
         return torch.tensor(query_tokens), torch.tensor(response_tokens)
 
     def pad_sequence(self, tokens):
-        padded = tokens + [0] * (self.max_seq_len - len(tokens))
+        pad_token_id = 0  # Assuming 0 is the PAD token ID
+        padded = tokens + [pad_token_id] * (self.max_seq_len - len(tokens))
         return padded[:self.max_seq_len]
 
 # Training Parameters
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-vocab_size = 30522  # Adjust based on your tokenizer
+vocab_size = 50257  # Adjust to match your tokenizer's vocabulary size
 d_model = 512
 n_heads = 8
 num_encoder_layers = 6
@@ -79,13 +80,13 @@ learning_rate = 0.001
 epochs = 10
 dataset_path = "tokenized_dataset.json"
 
-# Load Tokenized Dataset
-dataset = TokenizedChatbotDataset(dataset_path, max_seq_len)
+# Load Dataset
+dataset = ChatbotDataset(dataset_path, max_seq_len)
 data_loader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
 
 # Initialize Model
 model = TransformerChatbot(vocab_size, d_model, n_heads, num_encoder_layers, num_decoder_layers, ff_hidden_dim, max_seq_len, dropout).to(device)
-criterion = nn.CrossEntropyLoss(ignore_index=0)  # Assuming 0 is the pad token ID
+criterion = nn.CrossEntropyLoss(ignore_index=0)  # Assuming 0 is the PAD token ID
 optimizer = optim.Adam(model.parameters(), lr=learning_rate)
 
 # Training Loop
@@ -109,8 +110,8 @@ for epoch in range(epochs):
         tgt_output = tgt[:, 1:]
 
         src_mask, tgt_mask = create_mask(src, tgt_input)
-        src_padding_mask = src == 0  # Assuming 0 is the pad token ID
-        tgt_padding_mask = tgt_input == 0
+        src_padding_mask = src == 0  # Assuming 0 is the PAD token ID
+        tgt_padding_mask = tgt_input == 0  # Assuming 0 is the PAD token ID
 
         outputs = model(src, tgt_input, src_mask, tgt_mask, src_padding_mask, tgt_padding_mask)
         outputs = outputs.reshape(-1, outputs.size(-1))
@@ -125,7 +126,6 @@ for epoch in range(epochs):
 
     print(f"Epoch {epoch + 1}/{epochs}, Loss: {epoch_loss / len(data_loader)}")
 
-# Save the trained model
-model_save_path = "trained_model.pth"
-torch.save(model.state_dict(), model_save_path)
-print(f"Model saved as '{model_save_path}'")
+# Save the model after training
+torch.save(model.state_dict(), "trained_model.pth")
+print("Model saved as 'trained_model.pth'")
