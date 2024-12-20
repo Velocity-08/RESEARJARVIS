@@ -6,7 +6,7 @@ from torch.nn import Transformer
 import json
 from transformers import AutoTokenizer
 
-# Define the TransformerChatbot model (same architecture as before)
+# Define the TransformerChatbot model
 class TransformerChatbot(nn.Module):
     def __init__(self, vocab_size, d_model, n_heads, num_encoder_layers, num_decoder_layers, ff_hidden_dim, max_seq_len, dropout):
         super(TransformerChatbot, self).__init__()
@@ -57,9 +57,11 @@ class ChatbotDataset(Dataset):
         query = self.data[idx]['query']
         response = self.data[idx]['response']
 
-        query_tokens = query  # The data should already be tokenized
-        response_tokens = response  # The data should already be tokenized
+        # No need to tokenize again since data is already tokenized
+        query_tokens = query
+        response_tokens = response
 
+        # Pad sequences to ensure uniform length
         query_tokens = self.pad_sequence(query_tokens)
         response_tokens = self.pad_sequence(response_tokens)
 
@@ -132,3 +134,7 @@ for epoch in range(epochs):
         epoch_loss += loss.item()
 
     print(f"Epoch {epoch + 1}/{epochs}, Loss: {epoch_loss / len(data_loader)}")
+
+# Saving the trained model
+torch.save(model.state_dict(), "trained_model.pth")
+print("Model training complete and saved as 'trained_model.pth'")
