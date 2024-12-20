@@ -4,7 +4,6 @@ import torch.optim as optim
 from torch.utils.data import DataLoader, Dataset
 from torch.nn import Transformer
 import json
-from transformers import AutoTokenizer
 
 # Define the TransformerChatbot model
 class TransformerChatbot(nn.Module):
@@ -43,44 +42,31 @@ class TransformerChatbot(nn.Module):
         return output
 
 # Dataset Preparation
-class ChatbotDataset(Dataset):
-    def __init__(self, dataset_path, tokenizer, max_seq_len):
+class TokenizedChatbotDataset(Dataset):
+    def __init__(self, dataset_path, max_seq_len):
         with open(dataset_path, 'r') as f:
             self.data = json.load(f)
-        self.tokenizer = tokenizer
         self.max_seq_len = max_seq_len
 
     def __len__(self):
         return len(self.data)
 
     def __getitem__(self, idx):
-        query = self.data[idx]['query']
-        response = self.data[idx]['response']
+        query_tokens = self.data[idx]['query'][:self.max_seq_len]
+        response_tokens = self.data[idx]['response'][:self.max_seq_len]
 
-        # Ensure tokenizer.encode() returns a list of integers (token IDs)
-        query_tokens = self.tokenizer.encode(query, truncation=True, max_length=self.max_seq_len - 2)
-        response_tokens = self.tokenizer.encode(response, truncation=True, max_length=self.max_seq_len - 2)
-
-        query_tokens = [self.tokenizer.cls_token_id] + query_tokens + [self.tokenizer.sep_token_id]
-        response_tokens = [self.tokenizer.cls_token_id] + response_tokens + [self.tokenizer.sep_token_id]
-
-        # Pad sequences to max_seq_len
         query_tokens = self.pad_sequence(query_tokens)
         response_tokens = self.pad_sequence(response_tokens)
 
         return torch.tensor(query_tokens), torch.tensor(response_tokens)
 
     def pad_sequence(self, tokens):
-        # Ensure padding only happens with integer lists
-        if isinstance(tokens, list):
-            padded = tokens + [self.tokenizer.pad_token_id] * (self.max_seq_len - len(tokens))
-            return padded[:self.max_seq_len]
-        else:
-            raise ValueError("Tokens should be a list of integers")
+        padded = tokens + [0] * (self.max_seq_len - len(tokens))
+        return padded[:self.max_seq_len]
 
 # Training Parameters
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-vocab_size = 30522  # Vocabulary size for BERT tokenizer
+vocab_size = 30522  # Adjust based on your tokenizer
 d_model = 512
 n_heads = 8
 num_encoder_layers = 6
@@ -91,29 +77,16 @@ dropout = 0.1
 batch_size = 16
 learning_rate = 0.001
 epochs = 10
-dataset_path = "tokenized_dataset.json"  # Use tokenized dataset
+dataset_path = "tokenized_dataset.json"
 
-# Use the BERT tokenizer
-tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
-
-# Load Dataset
-dataset = ChatbotDataset(dataset_path, tokenizer, max_seq_len)
+# Load Tokenized Dataset
+dataset = TokenizedChatbotDataset(dataset_path, max_seq_len)
 data_loader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
 
 # Initialize Model
 model = TransformerChatbot(vocab_size, d_model, n_heads, num_encoder_layers, num_decoder_layers, ff_hidden_dim, max_seq_len, dropout).to(device)
-criterion = nn.CrossEntropyLoss(ignore_index=tokenizer.pad_token_id)
+criterion = nn.CrossEntropyLoss(ignore_index=0)  # Assuming 0 is the pad token ID
 optimizer = optim.Adam(model.parameters(), lr=learning_rate)
-
-# Load Model Checkpoint (if available)
-def load_model(model, checkpoint_path):
-    checkpoint = torch.load(checkpoint_path)
-    model.load_state_dict(checkpoint['model_state_dict'])
-    optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
-    epoch = checkpoint['epoch']
-    loss = checkpoint['loss']
-    print(f"Model loaded from checkpoint, starting from epoch {epoch} with loss {loss}")
-    return model, optimizer, epoch, loss
 
 # Training Loop
 def create_mask(src, tgt):
@@ -125,11 +98,6 @@ def create_mask(src, tgt):
     return src_mask, tgt_mask
 
 print("Starting training...")
-
-# Uncomment the following lines to load model from a checkpoint (if available)
-# checkpoint_path = 'model_checkpoint.pth'
-# model, optimizer, start_epoch, loss = load_model(model, checkpoint_path)
-
 for epoch in range(epochs):
     model.train()
     epoch_loss = 0
@@ -141,8 +109,8 @@ for epoch in range(epochs):
         tgt_output = tgt[:, 1:]
 
         src_mask, tgt_mask = create_mask(src, tgt_input)
-        src_padding_mask = src == tokenizer.pad_token_id
-        tgt_padding_mask = tgt_input == tokenizer.pad_token_id
+        src_padding_mask = src == 0  # Assuming 0 is the pad token ID
+        tgt_padding_mask = tgt_input == 0
 
         outputs = model(src, tgt_input, src_mask, tgt_mask, src_padding_mask, tgt_padding_mask)
         outputs = outputs.reshape(-1, outputs.size(-1))
@@ -157,10 +125,7 @@ for epoch in range(epochs):
 
     print(f"Epoch {epoch + 1}/{epochs}, Loss: {epoch_loss / len(data_loader)}")
 
-    # Save the model checkpoint after each epoch
-    torch.save({
-        'epoch': epoch + 1,
-        'model_state_dict': model.state_dict(),
-        'optimizer_state_dict': optimizer.state_dict(),
-        'loss': epoch_loss / len(data_loader),
-    }, f'model_checkpoint_epoch_{epoch + 1}.pth')
+# Save the trained model
+model_save_path = "trained_model.pth"
+torch.save(model.state_dict(), model_save_path)
+print(f"Model saved as '{model_save_path}'")
