@@ -6,13 +6,13 @@ from torch.nn import Transformer
 import json
 from transformers import AutoTokenizer
 
-# Define the TransformerChatbot model
+# Define the TransformerChatbot model (same architecture as before)
 class TransformerChatbot(nn.Module):
     def __init__(self, vocab_size, d_model, n_heads, num_encoder_layers, num_decoder_layers, ff_hidden_dim, max_seq_len, dropout):
         super(TransformerChatbot, self).__init__()
         self.embedding = nn.Embedding(vocab_size, d_model)
         self.positional_encoding = nn.Parameter(torch.zeros(1, max_seq_len, d_model))
-        self.transformer = Transformer(
+        self.transformer = nn.Transformer(
             d_model=d_model,
             nhead=n_heads,
             num_encoder_layers=num_encoder_layers,
@@ -31,7 +31,7 @@ class TransformerChatbot(nn.Module):
         tgt_emb = self.dropout(tgt_emb)
 
         transformer_out = self.transformer(
-            src_emb.permute(1, 0, 2), 
+            src_emb.permute(1, 0, 2),
             tgt_emb.permute(1, 0, 2),
             src_mask=src_mask,
             tgt_mask=tgt_mask,
@@ -42,11 +42,11 @@ class TransformerChatbot(nn.Module):
         output = self.fc_out(transformer_out.permute(1, 0, 2))
         return output
 
-# Dataset Preparation
+# Dataset Preparation (using tokenized data)
 class ChatbotDataset(Dataset):
     def __init__(self, dataset_path, tokenizer, max_seq_len):
         with open(dataset_path, 'r') as f:
-            self.data = json.load(f)
+            self.data = json.load(f)  # This should be your tokenized dataset (e.g. tokenized_dataset.json)
         self.tokenizer = tokenizer
         self.max_seq_len = max_seq_len
 
@@ -57,11 +57,8 @@ class ChatbotDataset(Dataset):
         query = self.data[idx]['query']
         response = self.data[idx]['response']
 
-        query_tokens = self.tokenizer.encode(query, truncation=True, max_length=self.max_seq_len - 2)
-        response_tokens = self.tokenizer.encode(response, truncation=True, max_length=self.max_seq_len - 2)
-
-        query_tokens = [self.tokenizer.cls_token_id] + query_tokens + [self.tokenizer.sep_token_id]
-        response_tokens = [self.tokenizer.cls_token_id] + response_tokens + [self.tokenizer.sep_token_id]
+        query_tokens = query  # The data should already be tokenized
+        response_tokens = response  # The data should already be tokenized
 
         query_tokens = self.pad_sequence(query_tokens)
         response_tokens = self.pad_sequence(response_tokens)
@@ -74,7 +71,7 @@ class ChatbotDataset(Dataset):
 
 # Training Parameters
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-vocab_size = 30522  # Vocabulary size for BERT tokenizer
+vocab_size = 30522  # BERT tokenizer vocabulary size
 d_model = 512
 n_heads = 8
 num_encoder_layers = 6
@@ -85,8 +82,7 @@ dropout = 0.1
 batch_size = 16
 learning_rate = 0.001
 epochs = 10
-dataset_path = "cleaned_dataset.json"
-model_save_path = "trained_model.pth"
+dataset_path = "tokenized_dataset.json"  # Use the tokenized dataset here
 
 # Use the BERT tokenizer
 tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
@@ -136,7 +132,3 @@ for epoch in range(epochs):
         epoch_loss += loss.item()
 
     print(f"Epoch {epoch + 1}/{epochs}, Loss: {epoch_loss / len(data_loader)}")
-
-# Save the trained model
-torch.save(model.state_dict(), model_save_path)
-print(f"Model saved successfully to {model_save_path}")
