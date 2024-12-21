@@ -4,8 +4,13 @@ import torch.optim as optim
 from torch.utils.data import DataLoader, Dataset
 from torch.nn import Transformer
 import json
+from transformers import GPT2Tokenizer
 
-# Define the TransformerChatbot model
+# Load the GPT2 tokenizer and set vocab size
+tokenizer = GPT2Tokenizer.from_pretrained('gpt2')
+vocab_size = len(tokenizer)  # Get vocab size directly from the tokenizer
+
+# Define the Transformer Chatbot Model
 class TransformerChatbot(nn.Module):
     def __init__(self, vocab_size, d_model, n_heads, num_encoder_layers, num_decoder_layers, ff_hidden_dim, max_seq_len, dropout):
         super(TransformerChatbot, self).__init__()
@@ -43,31 +48,41 @@ class TransformerChatbot(nn.Module):
 
 # Dataset Preparation
 class ChatbotDataset(Dataset):
-    def __init__(self, dataset_path, max_seq_len):
+    def __init__(self, dataset_path, max_seq_len, vocab_size):
         with open(dataset_path, 'r') as f:
             self.data = json.load(f)
         self.max_seq_len = max_seq_len
+        self.vocab_size = vocab_size
 
     def __len__(self):
         return len(self.data)
 
     def __getitem__(self, idx):
-        query_tokens = self.data[idx]['gpt_query_tokens'][:self.max_seq_len]
-        response_tokens = self.data[idx]['gpt_response_tokens'][:self.max_seq_len]
+        query_tokens = self.data[idx]['gpt_query_tokens']  # Already tokenized
+        response_tokens = self.data[idx]['gpt_query_tokens']  # Assuming responses are also tokenized similarly
 
+        self.validate_tokens(query_tokens)
+        self.validate_tokens(response_tokens)
+
+        # Pad the sequences to max_seq_len
         query_tokens = self.pad_sequence(query_tokens)
         response_tokens = self.pad_sequence(response_tokens)
 
         return torch.tensor(query_tokens), torch.tensor(response_tokens)
 
     def pad_sequence(self, tokens):
-        pad_token_id = 0  # Assuming 0 is the PAD token ID
-        padded = tokens + [pad_token_id] * (self.max_seq_len - len(tokens))
-        return padded[:self.max_seq_len]
+        # Pad with 0 (assuming 0 is padding token) up to max_seq_len
+        padded = tokens + [0] * (self.max_seq_len - len(tokens))
+        return padded[:self.max_seq_len]  # Ensure no sequence exceeds max_seq_len
+
+    def validate_tokens(self, tokens):
+        for token in tokens:
+            if token >= self.vocab_size:
+                print(f"Warning: Token {token} exceeds vocab size {self.vocab_size - 1}")
+
 
 # Training Parameters
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-vocab_size = 50257  # Adjust to match your tokenizer's vocabulary size
 d_model = 512
 n_heads = 8
 num_encoder_layers = 6
@@ -78,15 +93,15 @@ dropout = 0.1
 batch_size = 16
 learning_rate = 0.001
 epochs = 10
-dataset_path = "tokenized_dataset.json"
+dataset_path = "tokenized_dataset.json"  # Your tokenized dataset file
 
 # Load Dataset
-dataset = ChatbotDataset(dataset_path, max_seq_len)
+dataset = ChatbotDataset(dataset_path, max_seq_len, vocab_size)
 data_loader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
 
 # Initialize Model
 model = TransformerChatbot(vocab_size, d_model, n_heads, num_encoder_layers, num_decoder_layers, ff_hidden_dim, max_seq_len, dropout).to(device)
-criterion = nn.CrossEntropyLoss(ignore_index=0)  # Assuming 0 is the PAD token ID
+criterion = nn.CrossEntropyLoss(ignore_index=0)  # Ignore padding token index (assuming 0 is padding)
 optimizer = optim.Adam(model.parameters(), lr=learning_rate)
 
 # Training Loop
@@ -110,8 +125,8 @@ for epoch in range(epochs):
         tgt_output = tgt[:, 1:]
 
         src_mask, tgt_mask = create_mask(src, tgt_input)
-        src_padding_mask = src == 0  # Assuming 0 is the PAD token ID
-        tgt_padding_mask = tgt_input == 0  # Assuming 0 is the PAD token ID
+        src_padding_mask = src == 0  # Assuming padding token is 0
+        tgt_padding_mask = tgt_input == 0
 
         outputs = model(src, tgt_input, src_mask, tgt_mask, src_padding_mask, tgt_padding_mask)
         outputs = outputs.reshape(-1, outputs.size(-1))
@@ -126,6 +141,7 @@ for epoch in range(epochs):
 
     print(f"Epoch {epoch + 1}/{epochs}, Loss: {epoch_loss / len(data_loader)}")
 
-# Save the model after training
-torch.save(model.state_dict(), "trained_model.pth")
-print("Model saved as 'trained_model.pth'")
+# Save the trained model
+model_save_path = "transformer_chatbot_model.pth"
+torch.save(model.state_dict(), model_save_path)
+print(f"Model saved to {model_save_path}")
